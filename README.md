@@ -8,12 +8,10 @@
 | Maryam Najibi    | snajibi      | snajibi@myseneca.ca   | bilbilak#9085   |
 
 ## Project Description
-In this project, a website tailored for faculty members teaching CAPSTONE project courses is developed. This website will feature a number of tools to aid faculty during the process of teaching these courses. The two most important tools are a timeslot picking tool, and a group messaging tool, which are discussed in what follows:
+Our group is planning to work on a website with which people can see information and reviews about different places and restaurants in Toronto. Basically, it is like a guided tour website for anyone who is willing to travel to Toronto and looking for recommendations.
+We are planning to have the following tools in our website. A tool for creating new posts, a tool for leaving comments under each post, a tool for searching through posts and setting filters for them. Also each user should be able to log in to his/her account to access some of the mentioned tools such as creating a new post.
+We are going to use MongoDb to create the database and then create an API based on that. For the front end we're using angular for functionality and bootstrap for css.Finally, for the backend we are planning to use Node.js.
 
-### Timeslot Picking Tool
-This tool will allow faculty members to create a number of timeslots available for groups of students to pick their preferred meeting times. After the timeslots are created, students are able to log in and click on available timeslots. The tool should also message all group members with details about the chosen timeslots. Note that the tool does not have an option to allow students to change their option. This is done by design to ensure that students will discuss with their groups as soon as possible (as opposed to a student simply trying to keep a placeholder and discussing later).
 
 ### Group Messaging Tool
-This tool will allow the faculty to quickly visualize all groups and its members. Moreover, this toll should allow facutly to quickly craft an email message to specific groups.
-
-Note that both these tools require the website to have an authentication system in which users can take two different roles (faculty or student), each role with specific capabilities. Due to the fact that users are only allowed into the system as per faculty's invitation, no authentication APIs, such as [Facebook](https://developers.facebook.com/docs/facebook-login/), or [Google](https://developers.google.com/identity/sign-in/web/sign-in), are implemented.
+We are using discord application and we have a server in which we communicate. 
