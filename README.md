@@ -15,3 +15,12 @@ We are going to use MongoDb to create the database and then create an API based 
 
 ### Group Messaging Tool
 We are using discord application and we have a server in which we communicate. 
+
+
+# Roles
+
+| Project Role        |  Student                         |
+| ------------------- |  ------------------------------- |
+| Front-End Developer | All members                      |
+| Back-End Developer  | Nikita Korolkov                  |
+| Database Specialist | Maryam Najibi and Sarvin Raeisi  |
