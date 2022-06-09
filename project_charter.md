@@ -20,9 +20,21 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 ## 3. Milestones
 
 1. List of technological choices for front-end, back-end, database, and hosting/domain defined: [link](https://github.com/CAPSTONE-2022-2023/Group_17/blob/main/technical_details.md)
-<!-- 2. Website back-end up and front-end designed and some static test pages tested in development environment
-3. Template to deliver presentations addded to the website designed and tested
-4. Tool for faculty to display its availability designed and tested
-5. Tool for allowing faculty to message groups designed and tested: [link](https://github.com/CAPSTONE-2022-2023/Group_00/blob/main/use_cases/group_messaging.md)
-6. Tool for allowing students and groups to pick timeslots designed and tested: [link](https://github.com/CAPSTONE-2022-2023/Group_00/blob/main/use_cases/picking_timeslot.md) -->
+2. Website back-end up and front-end designed and some static test pages tested in development environment
+3. Tool for allowing admin to be able to modify current posts will be designed
+4. Tool for allowing admin to be able to create new posts will be designed
+5. Tool for allowing user to search for a post based on location will be desgined
+6. 
+7. 
+8.  
+9.  
 
+
+## 4. Deliverables
+
+1. User is able to add comments for posts
+2. User can see the review about different restaurants and places for specific location
+3. 
+4. 
+5. 
+6. 
