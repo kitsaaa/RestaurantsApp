@@ -4,11 +4,11 @@
 Admin with a valid username and password in the system.
 
 ### Pre-conditions
-All admins already have already propper username and password which are stored in the database.
+All admins already have propper username and password which are stored in the database.
 
 ### Main Flow
 1. The admin clicks on the **Login** tab on the admin directory of Tour Guide website.
-2. The system ask the user to enter the username and password.
+2. The system ask the admin to enter the username and password.
 3. The user enters the username and password and click on **Submit** button.
 4. The system check the entered username and password with the stored information in the database.
 
