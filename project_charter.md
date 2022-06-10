@@ -24,17 +24,16 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 3. Tool for allowing admin to be able to modify current posts will be designed
 4. Tool for allowing admin to be able to create new posts will be designed
 5. Tool for allowing user to search for a post based on location will be desgined
-6. 
-7. 
-8.  
-9.  
+6. Tool for allowing admin to login to the system will be designed.
+7. Tool for user to be able to leave comments will be designed.
+8. Tool for user to be able to rate the posts will be designed. 
 
 
 ## 4. Deliverables
 
-1. User is able to add comments for posts
-2. User can see the review about different restaurants and places for specific location
-3. 
-4. 
-5. 
-6. 
+1. Tools for leaving comments is accessible for users.
+2. Tools for sorting the post is available for admins and users.
+3. Posts are modifiable by admins.
+4. Posts are viewable by users.
+5. Tools for logging in to the website is available for admins.
+6. Tools for rating is available for users.
