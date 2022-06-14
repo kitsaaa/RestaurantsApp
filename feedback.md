@@ -17,3 +17,9 @@
 - **Admin Login ( done by Maryam Najibi)** - Main flow should have more steps. What happens after the login is succesful? This should not just be part of the postcondition. 8/10
 - **Admin creates new post ( done by Sarvin Raeisi)** - Missing actor. Steps in the main flow should have been broken down: some steps talk about both actions from the admin, as well as the system. 6/10
 - Missing case from Nikita -2 marks.
+
+## Milestones (4.5/5)
+- There should be a tool for allow admins to create other user accounts
+
+## Deliverables (4.5/5)
+- Sorting and searching are used interchangeably, and this is confusing. You either talk exclusively about one, or about the other. Or, even better, about both. You might even want to consider also adding filtering.
