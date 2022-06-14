@@ -13,8 +13,6 @@ We are planning to have the following tools in our website. A tool for creating 
 We are going to use MongoDb to create the database and then create an API based on that. For the front end we're using angular for functionality and bootstrap for css.Finally, for the backend we are planning to use Node.js.
 
 
-### Group Messaging Tool
-We are using discord application and we have a server in which we communicate. 
 
 
 # Roles
