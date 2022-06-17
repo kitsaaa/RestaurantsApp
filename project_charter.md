@@ -42,17 +42,18 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 
 ### 5.1 Risks
 
-- Any issues with hosting and domain that can interfere with the website accessibility will be solely the responsibility of the faculty
+- Required APIs might start charging, or stop working altogether
 - Some of the contracted services can have sudden price hikes
-- The faculty can inadvertently make changes that will cause the system to become unaccessible/unreliable
-- Students might find it har to navigate a new system outside of the ones already offered by the college (Blackboard)
-
+- Users might find the information about the place they want to visit
 ### 5.2 Assumptions
 
-- The faculty is well versed in all technologies required to create and maintain the website
+- The Admins are versed in all technologies required to create and maintain the website
 - The contracted services for hosting and domain are extremely reliable (accessible for more than 99.9% of the time)
+- All team members are committed to the project and will abide to our working agreement
+- The required database and API are free to use and provide data that can be used for our project purposes
 
 ### 5.3 Constraints
 
-- No personal information will be stored (and/or displayed) in the website besides students names and emails
-- No information regarding grades will be stored (and/or displayed) in the website
+- No personal information will be stored (and/or displayed) in the website besides User names and comments
+- The project needs to be completed before the end of the program ( April 2024)
+- 
