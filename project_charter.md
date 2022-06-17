@@ -37,3 +37,22 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 4. Posts are viewable by users.
 5. Tools for logging in to the website is available for admins.
 6. Tools for rating is available for users.
+
+## 5. Risks, Assumptions, and Constraints
+
+### 5.1 Risks
+
+- Any issues with hosting and domain that can interfere with the website accessibility will be solely the responsibility of the faculty
+- Some of the contracted services can have sudden price hikes
+- The faculty can inadvertently make changes that will cause the system to become unaccessible/unreliable
+- Students might find it har to navigate a new system outside of the ones already offered by the college (Blackboard)
+
+### 5.2 Assumptions
+
+- The faculty is well versed in all technologies required to create and maintain the website
+- The contracted services for hosting and domain are extremely reliable (accessible for more than 99.9% of the time)
+
+### 5.3 Constraints
+
+- No personal information will be stored (and/or displayed) in the website besides students names and emails
+- No information regarding grades will be stored (and/or displayed) in the website
