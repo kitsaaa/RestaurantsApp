@@ -20,4 +20,4 @@ User has clicked on specific post and that post has loaded successfully.
 - If any of the boxes is empty, system will ask the user to fill out all the boxes.
 
 ### Postconditions
-After user fill out all the boxes and click on submit button, all information will store in the database.
+After user fill out all the boxes and click on submit button, all information will store in the database and the inserted comment can be seen by other users. 
