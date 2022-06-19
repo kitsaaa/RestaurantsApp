@@ -45,6 +45,10 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 - Required APIs might start charging, or stop working altogether
 - Some of the contracted services can have sudden price hikes
 - Users might find the information about the place they want to visit
+- any issues with MongoDb and/or Heroku can affect the website accessibility
+- team members might make changes to the website that causes the website to become unaccessible
+- users might find it hard to use this tour guide website instead of checking out the reviews on google
+
 ### 5.2 Assumptions
 
 - The Admins are versed in all technologies required to create and maintain the website
@@ -56,4 +60,7 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 
 - No personal information will be stored (and/or displayed) in the website besides User names and comments
 - The project needs to be completed before the end of the program ( April 2024)
-- 
+- On Heroku we are limited to a rolling window of 75 requests to Heroku Git repos per hour, per app, per user.
+- On Heroku the uncompressed size of a checkount of HEAD from the repo cannot exceed 1GB.
+- Mongodb uses high memory for data storage.
+- Mongodb has a limit for document size (16mb).
