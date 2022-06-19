@@ -45,21 +45,21 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 - Required APIs might start charging, or stop working altogether
 - Some of the contracted services can have sudden price hikes
 - Any issues with MongoDb and/or Heroku can affect the website accessibility
-- Team members might make changes to the website that causes the website to become unaccessible
-- Users might find it hard to use this tour guide website instead of checking out the reviews on google
+- Team members might make changes to the website that causes the website to become inaccessible
+- Users might find it hard to use this tour guide website instead of checking out the reviews on Google
 
 ### 5.2 Assumptions
 
-- The Admins are versed in all technologies required to create and maintain the website
-- The contracted services for hosting and domain are extremely reliable(accessible for more than 99.9% of the time)
+- The admins are versed in all required technologies needed to create and maintain the website
+- The contracted services for hosting and maintaining domain are extremely reliable (accessible for more than 99.9% of the time)
 - All team members are committed to the project and will abide to our working agreement
 - The required database and API are free to use and provide data that can be used for our project purposes
 
 ### 5.3 Constraints
 
-- No personal information will be stored (and/or displayed) in the website besides User names and comments
-- The project needs to be completed before the end of the program( April 2024)
-- On Heroku we are limited to a rolling window of 75 requests to Heroku Git repos per hour, per app, per user.
-- On Heroku the uncompressed size of a checkout of HEAD from the repo cannot exceed 1GB.
-- Mongodb uses high memory for data storage.
-- Mongodb has a limit for document size (16mb).
+- No personal information will be stored or displayed in the website besides Users'name and comments
+- The project needs to be completed before the end of the program (April 2024)
+- On Heroku we are limited to a rolling window of 75 requests to Heroku Git repos per hour, per app, per user
+- On Heroku the uncompressed size of a checkout of HEAD from the repo cannot exceed 1GB
+- MongoDB uses high memory for data storage
+- MongoDB has a limit for document size (16mb)
