@@ -44,7 +44,6 @@ Group 17, a group of 3 seneca students, are planning to develop a website to rec
 
 - Required APIs might start charging, or stop working altogether
 - Some of the contracted services can have sudden price hikes
-- Users might find the information about the place they want to visit
 - Any issues with MongoDb and/or Heroku can affect the website accessibility
 - Team members might make changes to the website that causes the website to become unaccessible
 - Users might find it hard to use this tour guide website instead of checking out the reviews on google
