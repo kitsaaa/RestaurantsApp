@@ -5,7 +5,7 @@
 | -----------------| ------------ | --------------------- | --------------- |
 | Sarvin Raeisi    | sarvinraeisi | sraeisi2@myseneca.ca  | wanheda#5214    |
 | Nikita Korolkov  | kitsaaa      | nkorolkov@myseneca.ca | hapnul#9665     |
-| Maryam Najibi    | snajibi      | snajibi@myseneca.ca   | bilbilak#9085   |
+| Maryam Najibi    | mnajibi      | snajibi@myseneca.ca   | bilbilak#9085   |
 
 ## Project Description
 Our group is planning to work on a website with which people can see information and reviews about different places and restaurants in Toronto. Basically, it is like a guided tour website for anyone who is willing to travel to Toronto and looking for recommendations.
