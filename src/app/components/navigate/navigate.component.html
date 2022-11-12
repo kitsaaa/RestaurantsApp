@@ -1,8 +1,13 @@
 <mat-sidenav-container>
     
     <mat-sidenav mode="side" [(opened)]='opened'>
-        <p>Posts</p>
-        <p>Reports</p>
+        <a mat-list-item href="home"> Posts</a>
+        <br>
+        <a mat-list-item href="newpost"> Add new post</a>
+        <br>
+        <a mat-list-item href="newadmin"> Add new admin</a>
+        <br>
+        <a mat-list-item href="home"> Reports</a>
     </mat-sidenav>
   
     <mat-sidenav-content>

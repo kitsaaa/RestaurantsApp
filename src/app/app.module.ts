@@ -22,6 +22,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { NavigateComponent } from './components/navigate/navigate.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostComponent } from './components/post/post.component';
+import { LogoutComponent } from './logout/logout.component';
+import { NewpostComponent } from './newpost/newpost.component';
+import { AddAdminComponent } from './add-admin/add-admin.component';
 
 
 
@@ -37,6 +40,9 @@ import { PostComponent } from './components/post/post.component';
     HeaderComponent,
     NavigateComponent,
     PostComponent,
+    LogoutComponent,
+    NewpostComponent,
+    AddAdminComponent,
   
 
   ],
