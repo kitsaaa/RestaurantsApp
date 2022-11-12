@@ -1,1 +1,12 @@
-<p>navigate works!</p>
+<mat-sidenav-container>
+    
+    <mat-sidenav mode="side" [(opened)]='opened'>
+        <p>Posts</p>
+        <p>Reports</p>
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+        <button (click)="opened=!opened" class="btn"><i class="fa fa-bars"></i></button>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

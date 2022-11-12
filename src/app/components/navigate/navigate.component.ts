@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navigate.component.css']
 })
 export class NavigateComponent implements OnInit {
-
+  opened = false;
   constructor() { }
 
   ngOnInit(): void {
