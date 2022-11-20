@@ -24,6 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PostComponent } from './components/post/post.component';
 import { NewpostComponent } from './components/newpost/newpost.component';
 import { AddAdminComponent } from './components/add-admin/add-admin.component';
+import { NewAdminComponent } from './components/new-admin/new-admin.component';
+import { AddPostComponent } from './components/add-post/add-post.component';
 
 
 
@@ -41,6 +43,8 @@ import { AddAdminComponent } from './components/add-admin/add-admin.component';
     PostComponent,
     NewpostComponent,
     AddAdminComponent,
+    NewAdminComponent,
+    AddPostComponent,
   
 
   ],
