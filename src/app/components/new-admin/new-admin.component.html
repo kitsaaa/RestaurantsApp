@@ -1,0 +1,26 @@
+<br />
+<div  class="container" id="container">
+   
+    <Label>First name:</Label>
+    <input type="text" class="form-control" placeholder="Please enter admin's first name" [(ngModel)] ="fName">
+<br>
+    <Label>Last name:</Label>
+    <input type="text" class="form-control" placeholder="Please enter admin's last name" [(ngModel)] ="lName">
+    <br>
+    <Label>Email address:</Label>
+    <input type="text" class="form-control" placeholder="Please enter admin's email address" [(ngModel)] ="email">
+    <br>
+    <Label>Password:</Label>
+    <input type="text" class="form-control" placeholder="Please enter password" [(ngModel)] ="password">
+    <br>
+
+    <br><br>
+    <div id="container2">
+        <div id="btn">
+            <button id="sbtn" (click)="submitPressed()">Submit</button>
+            <button id="cbtn" (click)="cancelPressed()">Cancel</button>
+        </div>
+    </div>
+    
+</div>
+<br /> 

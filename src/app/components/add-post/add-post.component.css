@@ -1,0 +1,26 @@
+#container 
+{
+
+    font-size: large;
+    margin: auto;
+   
+  }
+
+  input
+  {
+    width: 100%;
+    border-style: groove;
+  }
+  textarea
+  {
+    border-color: black;
+    border-style: groove;
+  }
+
+  #btn
+  {
+    float: right;
+    background-color:  rgb(229, 134, 18);
+    border-radius: 10px;
+
+  }
