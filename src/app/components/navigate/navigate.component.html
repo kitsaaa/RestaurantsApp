@@ -2,10 +2,10 @@
     
     <mat-sidenav mode="side" [(opened)]='opened'>
         <div id="sidenav-items">
-            <a mat-list-item href="/newpost" >Add a Post</a>
+            <a mat-list-item (click)="addPost()" >Add a Post</a>
         </div>
         <div id="sidenav-items">
-            <a mat-list-item href="/addadmin" >Add an Admin</a>
+            <a mat-list-item (click)="addAdmin()" >Add an Admin</a>
         </div>
         <div id="sidenav-items">
             <a mat-list-item href="/" >user's view</a>

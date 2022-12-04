@@ -15,8 +15,8 @@ const routes: Routes = [
   {path:'signup', component:SignupComponent},
   {path:'admin', component:AdminloginComponent},
   {path:'dashboard', component:DashboardComponent},
-  {path:'newpost', component:NewpostComponent},
-  {path:'addadmin', component:AddAdminComponent}
+  {path:'dashboard/addpost', component:NewpostComponent},
+  {path:'dashboard/addadmin', component:AddAdminComponent}
 
 ];
 
