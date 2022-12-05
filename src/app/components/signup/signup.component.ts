@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AbstractType, Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { IUser } from 'src/app/services/User';
@@ -30,7 +30,11 @@ export class SignupComponent implements OnInit {
       firstName: ['', Validators.required],
       lastName: ['', Validators.required],
       email: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      ConfirmPassword: ['', Validators.required]
+    },
+    {
+      validators: this.MustMatch('password', 'ConfirmPassword')
     })
   }
   hideShowPass(){
@@ -48,5 +52,25 @@ export class SignupComponent implements OnInit {
     this._usersService.newPost(this.newUser).subscribe(data => {
       this.router.navigate(['/login']);
     })
+  }
+
+  get f(){
+    return this.signUpForm.controls
+  }
+
+  MustMatch(password:any, ConfirmPassword:any){
+    return(fg:FormGroup)=>{
+      const passwordctrl = fg.controls[password];
+      const Confrimpasswordctrl = fg.controls[ConfirmPassword];
+      
+
+      if(passwordctrl.value != Confrimpasswordctrl.value){
+        Confrimpasswordctrl.setErrors({MustMatch: true});
+        console.log("inside if")
+      }
+      else{
+        Confrimpasswordctrl.setErrors(null);
+      }
+    }
   }
 }
