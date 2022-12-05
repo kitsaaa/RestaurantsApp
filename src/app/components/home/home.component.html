@@ -1,2 +1,6 @@
-
-<p>home works!</p>
+                                                                                          
+<div style="display:flex; width: 100%; height: 100%;">
+    <div id="newPost" class="center">
+        <app-post *ngFor = "let post of blogPosts" class = "post col-xl-6" [post]="post" ></app-post>    
+    </div>
+</div>
