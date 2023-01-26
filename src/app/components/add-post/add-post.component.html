@@ -3,25 +3,22 @@
     
 
                     <label>Title:</label>
-                    <input type="text" class="form-control" placeholder="Please enter title for post" id="title" name="title" >
+                    <input type="text" class="form-control" placeholder="Please enter title for post" id="title" name="title" [(ngModel)] ="title" >
                     <br>
 
                     <label>Featured Image (URL):</label>
-                    <input type="text" class="form-control" placeholder="Please enter a valid URL address pointing to the image file" id="featuredImage" name="featuredImage" >
+                    <input type="text" class="form-control" placeholder="Please enter a valid URL address pointing to the image file" id="featuredImage" name="featuredImage" [(ngModel)] ="featuredImage" >
  <br>
                     <label>Post:</label>
-                    <textarea class="form-control" placeholder="Please enter caption" style="min-height:200px" id="post" name="post"></textarea>
+                    <textarea class="form-control" placeholder="Please enter caption" style="min-height:200px" id="post" name="post" [(ngModel)] ="post"></textarea>
                     <br>
                     <label>Category:</label>
-                    <input type="text" class="form-control" placeholder="Please enter up to 3 categories" id="category" name="category" >
-                    <br>
-                    <label>Tags:</label>
-                    <textarea class="form-control" placeholder="Please enter up to 5 tags" id="tags" name="tags" ></textarea>
+                    <input type="text" class="form-control" placeholder="Please enter up to 3 categories" id="category" name="category" [(ngModel)] ="category" >
                     <br>
 
                     <br>
                     <br>
-                <button type="submit" id ="btn" >Add Post</button>
+                <button type="submit" (click)="onAddPostClick()" id ="btn" >Add Post</button>
         
 </div>
 <br /> 

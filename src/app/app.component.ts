@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'capstone';
  
+  ngOnInit() {
+    window.sessionStorage.setItem('authenticated', 'false');
+    console.log("Initialized the page");
+  }
 }

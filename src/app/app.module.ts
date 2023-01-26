@@ -26,6 +26,9 @@ import { NewpostComponent } from './components/newpost/newpost.component';
 import { AddAdminComponent } from './components/add-admin/add-admin.component';
 import { NewAdminComponent } from './components/new-admin/new-admin.component';
 import { AddPostComponent } from './components/add-post/add-post.component';
+import { HomeHeaderComponent } from './components/home-header/home-header.component';
+import { AboutComponent } from './about/about.component';
+import { SortFilterComponent } from './components/sort-filter/sort-filter.component';
 
 
 
@@ -45,6 +48,9 @@ import { AddPostComponent } from './components/add-post/add-post.component';
     AddAdminComponent,
     NewAdminComponent,
     AddPostComponent,
+    HomeHeaderComponent,
+    AboutComponent,
+    SortFilterComponent,
   
 
   ],

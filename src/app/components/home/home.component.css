@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display-swap') ;
+*{
+    position: relative;
+    margin-left: 0;
+    margin-right: 0;
+}
+ul li {
+    list-style-type: none;
+    margin-top: 6px;
+
+}
+
+.leftcol {
+    
+    min-height: 300px;
+    border: 1px solid black;
+    background-color: rgb(17, 128, 45);
+    color: white;
+    font-size: large;
+    font-weight: 400;
+    border-radius: 20% 20% 20% 20% / 20% 20% 20% 20%;
+    
+}
+.leftcol ul{
+    margin-top: 10px;
+    
+}
+
+.row {
+    margin-top: 60px;
+    margin-left: 0px;
+}
+.col-9{
+
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+body{
+   --display:flex;
+    --justify-content:center;
+    --align-items:center;
+    --min-height:100vh;
+}
+
+.square{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.square span:nth-child(1){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    border:2px solid black;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 6s linear infinite;
+}
+.square:hover span:nth-child(1){
+    background: orange;
+    border: none;
+}
+
+.square span:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    border:2px solid black;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate2 4s linear infinite;
+}
+.square:hover span:nth-child(2){
+    background: orange;
+    border: none;
+}
+
+.square span:nth-child(3){
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    border:2px solid black;
+    border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+    transition: 0.5s;
+    animation: animate 10s linear infinite;
+}
+.square:hover span:nth-child(3){
+    background: orange;
+    border: none;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.content{
+    position: relative;
+    padding: 40px 60px;
+    color: black;
+    text-align: center;
+    transition: 0.5s;
+    z-index: 1000;
+    font-size: large;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    margin-top: 10px;
+    color: black;
+    border: 2px solid;
+    padding: 6px 18px;
+    font-weight: 600;
+    border-radius: 73% 27% 44% 56%/ 49% 44% 56% 51%;
+}
+.content a:hover{
+    background-color: rgb(233, 199, 126);
+}
