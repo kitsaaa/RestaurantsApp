@@ -29,11 +29,12 @@
                 <a href="/signup">Sing Up</a>
             </div>
         </div>
+        
       </div>
 
-      <div id="newPost" class="center">
-        <app-post *ngFor = "let post of blogPosts" class = "post col-xl-6" [post]="post" ></app-post>    
-    </div>
+       <div id="newPost" class="center">
+      <app-post *ngFor = "let post of blogPosts" class = "post col-xl-6" [post]="post" ></app-post>    
+  </div>
     </div>
    
   </div>
