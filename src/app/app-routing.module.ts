@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NewpostComponent } from './components/newpost/newpost.component';
 import { AboutComponent } from './about/about.component';
+import { ModifypostComponent } from './components/modifypost/modifypost.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -18,7 +19,8 @@ const routes: Routes = [
   {path:'dashboard', component:DashboardComponent},
   {path:'dashboard/addpost', component:NewpostComponent},
   {path:'dashboard/addadmin', component:AddAdminComponent},
-  {path:'about', component:AboutComponent}
+  {path:'about', component:AboutComponent},
+  {path:'dashboard/editpost', component:ModifypostComponent}
   
 
 ];

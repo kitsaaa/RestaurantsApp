@@ -29,6 +29,7 @@ import { AddPostComponent } from './components/add-post/add-post.component';
 import { HomeHeaderComponent } from './components/home-header/home-header.component';
 import { AboutComponent } from './about/about.component';
 import { SortFilterComponent } from './components/sort-filter/sort-filter.component';
+import { ModifypostComponent } from './components/modifypost/modifypost.component';
 
 
 
@@ -51,6 +52,7 @@ import { SortFilterComponent } from './components/sort-filter/sort-filter.compon
     HomeHeaderComponent,
     AboutComponent,
     SortFilterComponent,
+    ModifypostComponent,
   
 
   ],
