@@ -7,7 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NewpostComponent } from './components/newpost/newpost.component';
-import { AboutComponent } from './about/about.component';
+import { AboutComponent } from './components/about/about.component';
 import { ModifypostComponent } from './components/modifypost/modifypost.component';
 
 const routes: Routes = [

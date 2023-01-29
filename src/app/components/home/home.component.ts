@@ -9,8 +9,7 @@ import { PostsService } from 'src/app/services/posts.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  selectedSort: string = '';
-  sortOpts: any = ['Name', 'Date']
+ 
   blogPosts: Array<IPost> | undefined;
   querySub : any;
   constructor(private data: PostsService,private route : ActivatedRoute) { }
@@ -27,9 +26,7 @@ export class HomeComponent implements OnInit {
       this.getPage(+params['page'] || 1);
       });
   }
-  radioChangeHandler(event: any){
-    this.selectedSort = event.target.value;
-}
+
 ngOnDestroy()
 {
   if(this.querySub) this.querySub.unsubscribe();
