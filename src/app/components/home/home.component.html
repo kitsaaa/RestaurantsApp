@@ -2,39 +2,17 @@
 
 <div class="container">
     <div class="row">
-      <div class="col-3 ">
-        <div class="leftcol">
-          <br> 
-            <ul>Sort by
-                <div *ngFor="let sortOpt of sortOpts">
-                <li><input type="radio" name="Sname" value="{{sortOpt}}" (change)="radioChangeHandler($event)">{{sortOpt}}</li>
-            </div>
-            </ul>
-            <br>
-            <ul>Filter
-              <li>Location</li>
-              <li>Date</li>
-            </ul>
-        </div>
+      <div class="col ">
+       <app-sort-filter></app-sort-filter>
       </div>
       <div class="col-9">
-        <div class="square">
-            <span></span>
-            <span></span>
-            <span></span>
-            <div class="content">
-                Already have an account?<br>
-                <a href="/login">Login</a><br><br>
-                New to our website?<br>
-                <a href="/signup">Sing Up</a>
-            </div>
-        </div>
-        
+        <div id="newPost" class="center">
+          <app-post *ngFor = "let post of blogPosts" class = "post col-xl-6" [post]="post" ></app-post>    
+          
+      </div>
       </div>
 
-       <div id="newPost" class="center">
-      <app-post *ngFor = "let post of blogPosts" class = "post col-xl-6" [post]="post" ></app-post>    
-  </div>
+       
     </div>
    
   </div>
