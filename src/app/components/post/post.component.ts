@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
+import { Component, Input, OnInit } from '@angular/core';
+import { IPost } from 'src/app/services/Post';
 @Component({
   selector: 'app-post',
   templateUrl: './post.component.html',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PostComponent implements OnInit {
 
+  @Input('post')
+  post: IPost = new IPost;
   constructor() { }
 
   ngOnInit(): void {

@@ -47,6 +47,8 @@ export class LoginComponent implements OnInit {
           console.log("Match was found");
           if (data[i].usertype == 1) {
             this._router.navigate(['/dashboard']);
+            window.sessionStorage.setItem('authenticated', 'true');
+            window.sessionStorage.setItem('currentUser', data[i].firstname + ' ' + data[i].lastname);
           }
           else if (data[i].usertype == 2) {
             this._router.navigate(['/home']);
