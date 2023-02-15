@@ -31,7 +31,9 @@ import { AboutComponent } from './components/about/about.component';
 import { SortFilterComponent } from './components/sort-filter/sort-filter.component';
 import { ModifypostComponent } from './components/modifypost/modifypost.component';
 import { AnimationLoginComponent } from './components/animation-login/animation-login.component';
-
+import { TableComponent } from './components/table/table.component';
+import { EditapostComponent } from './components/editapost/editapost.component';
+import { EditonepostComponent } from './components/editonepost/editonepost.component';
 
 
 
@@ -55,7 +57,9 @@ import { AnimationLoginComponent } from './components/animation-login/animation-
     SortFilterComponent,
     ModifypostComponent,
     AnimationLoginComponent,
-  
+    TableComponent,
+    EditapostComponent,
+    EditonepostComponent
 
   ],
   imports: [
