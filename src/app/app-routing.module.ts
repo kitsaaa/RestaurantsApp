@@ -9,6 +9,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { NewpostComponent } from './components/newpost/newpost.component';
 import { AboutComponent } from './components/about/about.component';
 import { ModifypostComponent } from './components/modifypost/modifypost.component';
+import { EditapostComponent } from './components/editapost/editapost.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path:'dashboard/addpost', component:NewpostComponent},
   {path:'dashboard/addadmin', component:AddAdminComponent},
   {path:'about', component:AboutComponent},
-  {path:'dashboard/editpost', component:ModifypostComponent}
+  {path:'dashboard/editpost', component:ModifypostComponent},
+  {path: 'dashboard/editapost/:id', component:EditapostComponent}
   
 
 ];
