@@ -31,7 +31,13 @@ import { AboutComponent } from './components/about/about.component';
 import { SortFilterComponent } from './components/sort-filter/sort-filter.component';
 import { ModifypostComponent } from './components/modifypost/modifypost.component';
 import { AnimationLoginComponent } from './components/animation-login/animation-login.component';
-
+import { TableComponent } from './components/table/table.component';
+import { EditapostComponent } from './components/editapost/editapost.component';
+import { EditonepostComponent } from './components/editonepost/editonepost.component';
+import { PostPageComponent } from './components/post-page/post-page.component';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { UserHeaderComponent } from './components/user-header/user-header.component';
+import { UserCommentManagerComponent } from './components/user-comment-manager/user-comment-manager.component';
 
 
 
@@ -55,7 +61,13 @@ import { AnimationLoginComponent } from './components/animation-login/animation-
     SortFilterComponent,
     ModifypostComponent,
     AnimationLoginComponent,
-  
+    TableComponent,
+    EditapostComponent,
+    EditonepostComponent,
+    PostPageComponent,
+    UserDashboardComponent,
+    UserHeaderComponent,
+    UserCommentManagerComponent,
 
   ],
   imports: [

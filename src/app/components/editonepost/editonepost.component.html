@@ -3,17 +3,17 @@
     
 
                     <label>Title:</label>
-                    <input type="text" class="form-control" placeholder="Please enter title for post" id="title" name="title" [(ngModel)] ="title" >
+                    <input type="text" class="form-control" placeholder="Please enter title for post" id="title" name="title" [(ngModel)] ="post.title" >
                     <br>
 
                     <label>Featured Image (URL):</label>
-                    <input type="text" class="form-control" placeholder="Please enter a valid URL address pointing to the image file" id="featuredImage" name="featuredImage" [(ngModel)] ="featuredImage" >
+                    <input type="text" class="form-control" placeholder="Please enter a valid URL address pointing to the image file" id="featuredImage" name="featuredImage" [(ngModel)] ="post.featuredImage" >
  <br>
                     <label>Post:</label>
-                    <textarea class="form-control" placeholder="Please enter caption" style="min-height:200px" id="post" name="post" [(ngModel)] ="post"></textarea>
+                    <textarea class="form-control" placeholder="Please enter caption" style="min-height:200px" id="post" name="post" [(ngModel)] ="post.post"></textarea>
                     <br>
                     <label>Category:</label>
-                    <input type="text" class="form-control" placeholder="Please enter up to 3 categories" id="category" name="category" [(ngModel)] ="category" >
+                    <input type="text" class="form-control" placeholder="Please enter up to 3 categories" id="category" name="category" [(ngModel)] ="post.category" >
                     <br>
 
                     <br>

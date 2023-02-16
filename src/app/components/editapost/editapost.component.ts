@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
+import { IPost } from 'src/app/services/Post';
+import { PostsService } from 'src/app/services/posts.service';
 
 @Component({
   selector: 'app-editapost',
@@ -8,11 +10,10 @@ import { Router } from '@angular/router';
 })
 export class EditapostComponent implements OnInit {
 
-  constructor(private _router: Router) { }
-
+  constructor(private route: ActivatedRoute, private postsService: PostsService) { }
+  post: IPost = new IPost();
   ngOnInit(): void {
-  //   if (window.sessionStorage.getItem('authenticated') === 'false')
-  //     this._router.navigate(['/login']);
+
  }
 
 }

@@ -9,6 +9,10 @@ import { SignupComponent } from './components/signup/signup.component';
 import { NewpostComponent } from './components/newpost/newpost.component';
 import { AboutComponent } from './components/about/about.component';
 import { ModifypostComponent } from './components/modifypost/modifypost.component';
+import { EditapostComponent } from './components/editapost/editapost.component';
+import { PostPageComponent } from './components/post-page/post-page.component';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { UserCommentManagerComponent } from './components/user-comment-manager/user-comment-manager.component';
 
 const routes: Routes = [
   {path:'', redirectTo:'home', pathMatch:'full'},
@@ -20,7 +24,11 @@ const routes: Routes = [
   {path:'dashboard/addpost', component:NewpostComponent},
   {path:'dashboard/addadmin', component:AddAdminComponent},
   {path:'about', component:AboutComponent},
-  {path:'dashboard/editpost', component:ModifypostComponent}
+  {path:'dashboard/editpost', component:ModifypostComponent},
+  {path: 'dashboard/editapost/:id', component:EditapostComponent},
+  { path: "post/:_id", component: PostPageComponent},
+  {path:'user', component:UserDashboardComponent},
+  {path:'user/comments', component:UserCommentManagerComponent}
   
 
 ];

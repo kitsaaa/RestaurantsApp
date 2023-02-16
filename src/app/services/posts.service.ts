@@ -17,8 +17,8 @@ export class PostsService {
     return this.data;
   }
 
-  getPostById(id: number): Observable<IPost> {
-    return this.http.get<IPost>("https://restaurants-app-posts-ap-ivercel.vercel.app/api/posts" + id);
+  getPostById(id: string): Observable<IPost> {
+    return this.http.get<IPost>(`https://restaurants-app-posts-ap-ivercel.vercel.app/api/posts/${id}`);
   }
 
   newPost(data: IPost): Observable<any> {
