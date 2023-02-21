@@ -5,7 +5,6 @@ mat-sidenav-container{
 
 mat-sidenav , mat-sidenav-content{
     padding: 16px;
-    color: white;
     
 }
 mat-sidenav{
@@ -21,6 +20,17 @@ mat-sidenav a{
     font-size: larger;
     text-decoration: none;
     text-size-adjust: initial;
+    margin-bottom: 15px;
+
+}
+
+mat-sidenav a:hover{
+    background-color: rgb(55, 50, 50);
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    text-size-adjust: initial;
+    margin-bottom: 10px;
 }
 
 #sidenav-items {

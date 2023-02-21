@@ -1,0 +1,15 @@
+<app-user-header></app-user-header>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col ">
+                <app-sort-filter></app-sort-filter>
+            </div>
+            <div class="col-9">
+                <div id="newPost" class="center">
+                    <app-post *ngFor = "let post of blogPosts" class = "post col-xl-6" [post]="post" ></app-post>
+                </div>
+            </div>
+        </div>
+    
+</div>

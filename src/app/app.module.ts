@@ -34,6 +34,10 @@ import { AnimationLoginComponent } from './components/animation-login/animation-
 import { TableComponent } from './components/table/table.component';
 import { EditapostComponent } from './components/editapost/editapost.component';
 import { EditonepostComponent } from './components/editonepost/editonepost.component';
+import { PostPageComponent } from './components/post-page/post-page.component';
+import { UserDashboardComponent } from './components/user-dashboard/user-dashboard.component';
+import { UserHeaderComponent } from './components/user-header/user-header.component';
+import { UserCommentManagerComponent } from './components/user-comment-manager/user-comment-manager.component';
 
 
 
@@ -59,7 +63,11 @@ import { EditonepostComponent } from './components/editonepost/editonepost.compo
     AnimationLoginComponent,
     TableComponent,
     EditapostComponent,
-    EditonepostComponent
+    EditonepostComponent,
+    PostPageComponent,
+    UserDashboardComponent,
+    UserHeaderComponent,
+    UserCommentManagerComponent,
 
   ],
   imports: [

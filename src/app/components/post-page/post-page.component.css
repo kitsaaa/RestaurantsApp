@@ -1,0 +1,72 @@
+.post-thumbnail{
+
+    width: 100%;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.post-details{
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #fff;
+    color: rgba(20, 5, 5, 0.75);
+    
+}
+.post-details a{
+    text-decoration: none;
+    color: rgba(20, 5, 5, 0.75);
+}
+.h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+
+    color: rgba(235, 108, 11, 0.75);
+}
+
+.text-box{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgba(20, 5, 5, 0.75);
+
+}
+.comment{
+    margin: 10px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    background-color: #ffffff;
+    color: rgba(20, 5, 5, 0.75);
+}
+
+.post-comments{
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: rgba(20, 5, 5, 0.75);
+}
+
+.add-comment{
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: rgba(20, 5, 5, 0.75);
+}
+
+.col-6{
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    color: rgba(20, 5, 5, 0.75);
+}

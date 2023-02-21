@@ -51,7 +51,7 @@ export class LoginComponent implements OnInit {
             window.sessionStorage.setItem('currentUser', data[i].firstname + ' ' + data[i].lastname);
           }
           else if (data[i].usertype == 2) {
-            this._router.navigate(['/home']);
+            this._router.navigate(['/user']);
           }
           
         }
