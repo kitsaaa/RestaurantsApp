@@ -1,10 +1,11 @@
 <div class="leftcol">
     <br> 
       <ul>Sort by
-          <div *ngFor="let sortOpt of sortOpts">
+          <div *ngFor="let sortOpt of sortOpts" >
           <li><input type="radio" name="Sname" value="{{sortOpt}}" (change)="radioChangeHandler($event)">{{sortOpt}}</li>
       </div>
       </ul>
+  
       <br>
       <ul>Filter
         <li><a href="">Fast food</a></li>
