@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row">
       <div class="col ">
-       <app-sort-filter></app-sort-filter>
+       <app-sort-filter (sortChanged)="onSortChanged($event)"></app-sort-filter>
       </div>
       <div class="col-9">
         <div id="newPost" class="center">
