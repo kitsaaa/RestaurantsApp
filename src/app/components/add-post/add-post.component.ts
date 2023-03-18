@@ -24,6 +24,7 @@ export class AddPostComponent implements OnInit {
   post: string = '';
   category: string = '';
   currentUser: any = window.sessionStorage.getItem('currentUser');
+  date: Date = new Date();
 
   constructor(private _postsService: PostsService, private _router: Router) { }
 
@@ -34,6 +35,7 @@ export class AddPostComponent implements OnInit {
     this.newPost.post = this.post;
     this.newPost.category = this.category;
     this.newPost.postedBy = this.currentUser;
+    this.newPost.postDate = this.date.toDateString();
 
     this._postsService.newPost(this.newPost).subscribe(data => {
       this._router.navigate(['/dashboard']);
