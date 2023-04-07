@@ -23,6 +23,7 @@ export class PostPageComponent implements OnInit, OnDestroy {
   userID!: string;
   commentMatches: boolean[] = []
   editMode: boolean = false;
+  rating = 0;
 
 
   constructor(private postService: PostsService, private route: ActivatedRoute) { }
@@ -53,6 +54,9 @@ export class PostPageComponent implements OnInit, OnDestroy {
       this.updateSub = this.postService.updatePostById(this.post._id, this.post).subscribe();
     }
 
+  }
+  updateRating(value: number) {
+    this.rating = value;
   }
   ngOnInit(): void {
 

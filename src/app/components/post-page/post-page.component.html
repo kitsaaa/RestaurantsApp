@@ -7,16 +7,25 @@
 <div *ngIf="post" class="post-single">
     <div class="post-details">
         <div class="post-thumbnail"><img [src]="post.featuredImage" alt="..." class="img-fluid"></div>
+        <div class="rating-system"  >
+            <div *ngIf="authenticated">
+                <span class="star" [ngStyle]="{ 'color': rating >= 1 ? 'gold' : 'gray' }" (click)="updateRating(1)">★</span>
+            <span class="star" [ngStyle]="{ 'color': rating >= 2 ? 'gold' : 'gray' }" (click)="updateRating(2)">★</span>
+            <span class="star" [ngStyle]="{ 'color': rating >= 3 ? 'gold' : 'gray' }" (click)="updateRating(3)">★</span>
+            <span class="star" [ngStyle]="{ 'color': rating >= 4 ? 'gold' : 'gray' }" (click)="updateRating(4)">★</span>
+            <span class="star" [ngStyle]="{ 'color': rating >= 5 ? 'gold' : 'gray' }" (click)="updateRating(5)">★</span>
+            </div>
+          </div>
         <div class="post-meta d-flex justify-content-between">
             <div class="date meta-last">{{post.postDate| date:'mediumDate'}}</div>
-            <div class="category"><a href="#">{{post.category}}</a></div>
+              <div class="category"><a href="#">{{post.category}}</a></div>
           </div><a [routerLink]="['/post', post._id]">
             <h3 class="h4">{{post.title}}</h3></a>
           <p class="text-muted" innerHTML = "{{post.post}}"></p>
           <div class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
               <div class="title"><span>{{post.postedBy}}</span></div></a>
-            <div class="date"><i class="icon-clock"></i>{{post.postDate}}</div>
           </div>
+         
     </div>
     <div class="post-comments">
         <header>

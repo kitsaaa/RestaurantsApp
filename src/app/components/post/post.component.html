@@ -1,5 +1,7 @@
-<div class="post-thumbnail"><img src= {{post.featuredImage}} alt="..." class="img-fluid"></div>
+
 <div class="post-details">
+  <div class="post-thumbnail"><img src= {{post.featuredImage}} alt="..." class="img-fluid"></div>
+<div><span class="rating-system"> Rating: {{ rating }}</span></div>
   <div class="post-meta d-flex justify-content-between">
     <div class="date meta-last">{{post.postDate| date:'mediumDate'}}</div>
     <div class="category"><a href="#">{{post.category}}</a></div>
@@ -8,7 +10,6 @@
   <p class="text-muted" innerHTML = "{{post.post}}"></p>
   <div class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
       <div class="title"><span>{{post.postedBy}}</span></div></a>
-    <div class="date"><i class="icon-clock"></i>{{post.postDate | date:'mediumDate'}}</div>
     <div class="comments meta-last"><i class="icon-comment"></i>{{post.views}}</div>
   </div>
 </div>
