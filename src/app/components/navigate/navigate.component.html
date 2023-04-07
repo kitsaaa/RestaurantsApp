@@ -1,0 +1,28 @@
+<mat-sidenav-container>
+    
+    <mat-sidenav mode="side" [(opened)]='opened'>
+        <div id="sidenav-items">
+            <a mat-list-item (click)="AddPostClicked()" >Add a Post</a>
+        </div>
+        <div id="sidenav-items">
+            <a mat-list-item (click)="AddAdminClicked()" >Add an Admin</a>
+        </div>
+        <div id="sidenav-items">
+            <a mat-list-item (click)="EditPostClicked()" >Modify a post</a>
+        </div>
+        <div id="sidenav-items">
+            <a mat-list-item (click)="UserViewClicked()" >User's view</a>
+        </div>
+        <div id="sidenav-Logout">
+            <i class="fa fa-sign-out"></i>
+                <a mat-list-item href="login" > Logout</a>
+        </div>
+        
+        
+    </mat-sidenav>
+  
+    <mat-sidenav-content>
+        <button (click)="opened=!opened" class="btn"><i class="fa fa-bars"></i></button>
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>

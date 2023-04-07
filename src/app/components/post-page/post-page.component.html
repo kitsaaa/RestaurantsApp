@@ -1,0 +1,71 @@
+<app-home-header *ngIf="!authenticated"></app-home-header>
+<app-user-header *ngIf="authenticated"></app-user-header>
+
+<div class="main">
+<div class="col-3"></div>
+<div class="col-6">
+<div *ngIf="post" class="post-single">
+    <div class="post-details">
+        <div class="post-thumbnail"><img [src]="post.featuredImage" alt="..." class="img-fluid"></div>
+        <div class="post-meta d-flex justify-content-between">
+            <div class="date meta-last">{{post.postDate| date:'mediumDate'}}</div>
+            <div class="category"><a href="#">{{post.category}}</a></div>
+          </div><a [routerLink]="['/post', post._id]">
+            <h3 class="h4">{{post.title}}</h3></a>
+          <p class="text-muted" innerHTML = "{{post.post}}"></p>
+          <div class="post-footer d-flex align-items-center"><a href="#" class="author d-flex align-items-center flex-wrap">
+              <div class="title"><span>{{post.postedBy}}</span></div></a>
+            <div class="date"><i class="icon-clock"></i>{{post.postDate}}</div>
+          </div>
+    </div>
+    <div class="post-comments">
+        <header>
+            <h3 class="h6">Post Comments<span class="no-of-comments">({{post.comments.length}})</span></h3>
+        </header>
+        <div *ngFor="let aComment of post.comments" class="comment">
+            <div class="comment-header d-flex justify-content-between">
+                <div class="user d-flex align-items-center">
+                    
+                    <div class="title"><strong>{{aComment.author}}</strong>
+                        <!-- <span
+                            class="date">{{aComment.date}}</span> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="comment-body"  [innerHTML]="aComment.comment">
+            </div>
+            <input type="text" [(ngModel)]="aComment.comment" *ngIf="editMode && aComment.userID === this.userID" value={{aComment.comment}}>
+            <div id="buttons" *ngIf="aComment.userID === this.userID">
+                <button id ="btns" *ngIf="editMode" (click)="saveClicked(aComment)">Save</button>
+                <button id ="btn" (click)="editClicked()">Edit</button>
+                <button id ="dbtn" (click)="deleteClicked(aComment)">Delete</button>
+            </div>
+        </div>
+    </div>
+    <div class="add-comment">
+        <header>
+            <h3 class="h6">Leave a Comment</h3>
+        </header>
+        <form #f='ngForm' (ngSubmit)="submitComment(f)" class="commenting-form" *ngIf="authenticated">
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <div class="text-box">
+                    <input type="text" name="username" id="username" [(ngModel)]="commentName" placeholder="Name" class="form-control" required>
+                </div>
+                </div>
+                <div class="form-group col-md-12">
+                    <textarea name="usercomment" id="usercomment" [(ngModel)]="commentText" placeholder="Type your comment"
+                        class="form-control"></textarea>
+                </div>
+                <div class="form-group col-md-12">
+                    <button type="submit" class="btn btn-secondary">Submit Comment</button>
+                </div>
+            </div>
+        </form>
+        <h4 *ngIf="!authenticated">Please, log in to leave a comment</h4>
+    </div>
+</div>
+</div>
+<div class="col-3"></div>
+</div>

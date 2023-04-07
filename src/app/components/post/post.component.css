@@ -1,0 +1,19 @@
+.post-details{
+    margin: 10px;
+    margin-bottom: 50px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ccc;
+    /*background-color: #fff;*/
+}
+.post-details a{
+    text-decoration: none;
+    color: rgba(20, 5, 5, 0.75);
+    text-decoration: underline;
+}
+.h4{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgba(20, 5, 5, 0.75);
+}

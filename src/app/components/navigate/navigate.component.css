@@ -1,0 +1,47 @@
+mat-sidenav-container{
+    height:100%;
+    
+}
+
+mat-sidenav , mat-sidenav-content{
+    padding: 16px;
+    
+}
+mat-sidenav{
+    background-color: rgba(31, 29, 52, 0.805);
+    width: 200px;
+    
+}
+.btn{
+    background-color: darkgoldenrod;
+}
+mat-sidenav a{
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    text-size-adjust: initial;
+    margin-bottom: 15px;
+
+}
+
+mat-sidenav a:hover{
+    background-color: rgb(55, 50, 50);
+    color: white;
+    font-size: larger;
+    text-decoration: none;
+    text-size-adjust: initial;
+    margin-bottom: 10px;
+}
+
+#sidenav-items {
+    margin-bottom: 10px;
+}
+
+#sidenav-Logout{
+height: 50px;
+position: absolute;
+width: 100%;
+bottom: 0;
+list-style-type: none;
+padding-bottom:5.5em;
+}

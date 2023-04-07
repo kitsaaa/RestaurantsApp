@@ -1,0 +1,20 @@
+<app-home-header *ngIf="!authenticated"></app-home-header>
+<app-user-header *ngIf="authenticated"></app-user-header>
+<div class="main">
+<div class="container">
+    <div class="row">
+      <div class="col ">
+       <app-sort-filter (sortChanged)="onSortChanged($event)"></app-sort-filter>
+      </div>
+      <div class="col-9">
+        <div id="newPost" class="center">
+          <app-post *ngFor = "let post of filteredPosts" class = "post col-xl-6" [post]="post" ></app-post>    
+          
+      </div>
+      </div>
+
+       
+    </div>
+   
+  </div>
+</div>
