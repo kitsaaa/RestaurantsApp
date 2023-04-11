@@ -10,7 +10,7 @@ export class DashboardComponent implements OnInit {
   constructor(private _router: Router) { }
 
   ngOnInit(): void {
-    if (window.sessionStorage.getItem('authenticated') != '1') {
+    if (window.localStorage.getItem('authenticated') != '1') {
       console.log('not auth')
 
       this._router.navigate(['/login']);

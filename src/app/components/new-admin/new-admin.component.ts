@@ -28,7 +28,7 @@ export class NewAdminComponent implements OnInit {
   constructor(private _usersService: UsersService, private _router: Router) { }
 
   ngOnInit(): void {
-    if (window.sessionStorage.getItem('authenticated') != '1')
+    if (window.localStorage.getItem('authenticated') != '1')
       this._router.navigate(['/login']);
   }
 

@@ -47,16 +47,16 @@ export class LoginComponent implements OnInit {
           console.log("Match was found");
           if (data[i].usertype == 1) {
             this._router.navigate(['/dashboard']);
-            window.sessionStorage.setItem('authenticated', '1');
+            window.localStorage.setItem('authenticated', '1');
             // window.sessionStorage.setItem('authenticated', '1');
-            window.sessionStorage.setItem('currentUser', data[i].firstname + ' ' + data[i].lastname);
-            window.sessionStorage.setItem('currentUserID', data[i]._id);
+            window.localStorage.setItem('currentUser', data[i].firstname + ' ' + data[i].lastname);
+            window.localStorage.setItem('currentUserID', data[i]._id);
           }
           else if (data[i].usertype == 2) {
             this._router.navigate(['/home']);
-            window.sessionStorage.setItem('authenticated', '2');
-            window.sessionStorage.setItem('currentUser', data[i].firstname + ' ' + data[i].lastname);
-            window.sessionStorage.setItem('currentUserID', data[i]._id);
+            window.localStorage.setItem('authenticated', '2');
+            window.localStorage.setItem('currentUser', data[i].firstname + ' ' + data[i].lastname);
+            window.localStorage.setItem('currentUserID', data[i]._id);
 
           }
           

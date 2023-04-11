@@ -75,10 +75,10 @@ export class PostPageComponent implements OnInit, OnDestroy {
   }
   ngOnInit(): void {
 
-    if (window.sessionStorage.getItem('authenticated') != '0')
+    if (window.localStorage.getItem('authenticated') != '0')
       this.authenticated = true;
     if (this.authenticated) {
-      this.userID = window.sessionStorage.getItem('currentUserID') || '{}';
+      this.userID = window.localStorage.getItem('currentUserID') || '{}';
     }
     this.routeSub = this.route.params.subscribe(params=>{
       this.querySub = this.postService.getPostById(params['_id']).subscribe(data=>{

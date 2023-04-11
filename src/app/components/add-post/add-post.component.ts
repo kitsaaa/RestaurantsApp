@@ -23,7 +23,7 @@ export class AddPostComponent implements OnInit {
   featuredImage: string = '';
   post: string = '';
   category: string = '';
-  currentUser: any = window.sessionStorage.getItem('currentUser');
+  currentUser: any = window.localStorage.getItem('currentUser');
   date: Date = new Date();
 
 

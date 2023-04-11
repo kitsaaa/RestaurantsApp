@@ -35,7 +35,7 @@ export class HomeComponent implements OnInit {
     this.querySub = this.route.queryParams.subscribe(params => {
       this.getPage(+params['page'] || 1);
     });
-    if (window.sessionStorage.getItem('authenticated') === '2')
+    if (window.localStorage.getItem('authenticated') === '2')
       this.authenticated = true;
     for (let i = 0; i < 5; i++) {
       this.querySub = this.data.getPosts(1).subscribe(data => {

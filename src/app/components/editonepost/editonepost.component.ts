@@ -13,7 +13,7 @@ export class EditonepostComponent implements OnInit {
   post: IPost = new IPost();
 
  
-  currentUser: any = window.sessionStorage.getItem('currentUser');
+  currentUser: any = window.localStorage.getItem('currentUser');
   constructor(private _postsService: PostsService, private _router: Router, private route: ActivatedRoute) { }
 
   ngOnInit(): void {

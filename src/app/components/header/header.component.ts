@@ -20,8 +20,8 @@ export class HeaderComponent implements OnInit {
   }
 
   logoutClicked() {
-    window.sessionStorage.setItem('authenticated', '0');
-    window.sessionStorage.setItem('currentUser', '')
-    window.sessionStorage.setItem('currentUserID', '');
+    window.localStorage.setItem('authenticated', '0');
+    window.localStorage.setItem('currentUser', '')
+    window.localStorage.setItem('currentUserID', '');
   }
 }
