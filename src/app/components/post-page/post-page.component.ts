@@ -56,7 +56,22 @@ export class PostPageComponent implements OnInit, OnDestroy {
 
   }
   updateRating(value: number) {
-    this.rating = value;
+    if (this.post) {
+     // Convert the values to numbers to ensure correct arithmetic
+     const currentRating = parseFloat(this.post.rating as any) || 0;
+     const currentNumberOfRatings = parseInt(this.post.numberOfRatings as any) || 0;
+ 
+     // Calculate the new rating and increment the number of ratings
+     const newNumberOfRatings = currentNumberOfRatings + 1;
+     const newRating = ((currentRating * currentNumberOfRatings) + value) / newNumberOfRatings;
+ 
+     // Update the post object with the new values
+     this.rating = value;
+     this.post.numberOfRatings = newNumberOfRatings;
+     this.post.rating = newRating;
+ 
+     this.updateSub = this.postService.updatePostById(this.post._id, this.post).subscribe();
+    }
   }
   ngOnInit(): void {
 

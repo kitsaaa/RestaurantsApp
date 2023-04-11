@@ -13,6 +13,7 @@ export class PostComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.rating = this.post.rating;
   }
 
 }

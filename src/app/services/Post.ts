@@ -6,8 +6,9 @@ export class IPost {
     postDate: string = "";
     featuredImage: string = "";
     post: string = "";
-    postedBy: number = 0;
-    rating: string = "";
+    postedBy: string = "";
+    rating: number = 0;
+    numberOfRatings: number = 0;
     comments: IComment[] = [];
     isPrivate: boolean = false;
     views: number = 0;

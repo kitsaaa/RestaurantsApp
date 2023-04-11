@@ -1,7 +1,7 @@
 
 <div class="post-details">
   <div class="post-thumbnail"><img src= {{post.featuredImage}} alt="..." class="img-fluid"></div>
-<div><span class="rating-system"> Rating: {{ rating }}</span></div>
+<div><span class="rating-system"> Rating: {{ rating | number:'1.0-2'  }}</span></div>
   <div class="post-meta d-flex justify-content-between">
     <div class="date meta-last">{{post.postDate| date:'mediumDate'}}</div>
     <div class="category"><a href="#">{{post.category}}</a></div>
